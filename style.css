@@ -5,16 +5,15 @@ h1 {
     padding: 70px;
     font-family: 'Sunflower', sans-serif;
     color: black;
-    height: 300px;
     
 }
 
 img {
-    width: 300px; 
-    height: 300px; 
+    max-width: 100%;
+    height: auto;
 }
 h1 a{
-    padding-top: 50px;
+    padding-top: 5%;
 }
 h3{
     border-bottom: 3px solid black;
@@ -38,7 +37,7 @@ body{
 #grid{
     display: grid;
     grid-template-columns: 150px 1fr;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 #grid ol{
@@ -104,7 +103,7 @@ body{
 
 #search {
     display: block;
-    padding-top: 150px;
+    padding-top: 5%;
     text-align: center;
 }
 
