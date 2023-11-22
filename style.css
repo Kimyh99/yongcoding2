@@ -50,6 +50,7 @@ body{
     box-sizing: border-box;
     max-width: 100%;
     overflow: auto;
+    border-radius: 10px;
 
     @media screen and (min-width: 768px) {
         max-width: 768px;
