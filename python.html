@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>용회의 블로그</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+
+        <script>
+        function getCurrentDate() {
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return today.toLocaleDateString(undefined, options);
+        }
+        
+            
+        window.onload = function () {
+        var datePlaceholders = document.getElementsByClassName('datePlaceholder');
+        for (var i = 0; i < datePlaceholders.length; i++) {
+            datePlaceholders[i].innerHTML = getCurrentDate();
+            }
+        };
+        </script>
+    </head>
+
+    <body style>
+        <h1><a href="index.html" class="blog"><br><br><br>용회의 블로그</a></h1>
+        
+        <div id="grid">
+            <ul class="list">
+                <h5>코딩 마스터하기</h5>
+                <li><a href="c++.html" >C/C++</a></li><br>
+                <li><a href="python.html" >Python</a></li><br>
+                <li><a href="java.html">Java</a></li>
+            </ul>
+    
+            <div id="article">
+                <h3><br>Python<br><br></h3>
+                <ul class="list2">
+                    <li id="data"><h6><br>글 제목</h6><h6 class="date"><br>작성일</h6></li>
+                    <br><br>
+                    <li class="dataunder"><a href="c++.html">최소 비용 구하기</a><span class="datePlaceholder"></span></li><br>
+                    <li class="dataunder"><a href="python.html" >웜홀</a><span class="datePlaceholder"></span></li><br>
+                    <li class="dataunder"><a href="java.html">찾기</a><span class="datePlaceholder"></span></li><br>
+                    <li class="dataunder"><a href="c++.html">소수 찾기 알고리즘</a><span class="datePlaceholder"></span></li><br>
+                    <li class="dataunder"><a href="python.html" >시험 성적</a><span class="datePlaceholder"></span></li><br>
+                    <li class="dataunder"><a href="java.html">리스트 함수</a><span class="datePlaceholder"></span></li><br>
+                </ul>
+                <span id="search">
+                    <input type="button" value="제목">
+                    <input type="text">
+                    <input type="button" value="검색">
+                </span>
+                <br><br><br>
+            </div>
+        </div>
+        <br><br><br>
+    </body>
+</html>
