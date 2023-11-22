@@ -82,11 +82,11 @@ body{
 }
 
 .list2{
-    list-style-type: none;
-    text-align: left;
     padding-right: 5%;
     padding-left: 4%;
     margin-top: 6%;
+    list-style-type: none;
+    text-align: left;
     
 }
 .list2 a{
