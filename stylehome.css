@@ -55,11 +55,31 @@ body{
     align-items: flex-start;
     
     box-sizing: border-box;
-    max-width: 1140px;
-    height: 100%;
-    
     border-radius: 10px;
     overflow: auto; /* 내용이 넘칠 경우 스크롤 표시 */
+
+    box-sizing: border-box;
+    max-width: 100%;
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 992px) {
+        max-width: 992px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1140px;
+    }
+
+    @media screen and (min-width: 1400px) {
+        max-width: 1400px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        max-width: 1600px;
+    }
 }
 .list a{
     text-decoration: none;
