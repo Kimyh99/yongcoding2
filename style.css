@@ -49,11 +49,25 @@ body{
     padding-right: 60px;
     
     box-sizing: border-box;
-    max-width: 1140px;
+    max-width: 100%;
     height: 100%;
     
     border-radius: 10px;
-    overflow: auto; /* 내용이 넘칠 경우 스크롤 표시 */
+    overflow: auto;
+    @media (min-width: 768px) {
+        /* 화면 너비가 768px 이상일 때 적용될 스타일 */
+        max-width: 768px;
+    }
+
+    @media (min-width: 992px) {
+        /* 화면 너비가 992px 이상일 때 적용될 스타일 */
+        max-width: 992px;
+    }
+
+    @media (min-width: 1200px) {
+        /* 화면 너비가 1200px 이상일 때 적용될 스타일 */
+        max-width: 1140px;
+    }
 }
 .list a{
     text-decoration: none;
